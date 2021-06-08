@@ -62,3 +62,52 @@ if(Q5==='yes' || Q5==='y'){
 }
 
 alert("that's it, good to see you in my website "+ userName)
+
+
+
+
+for (let i = 0; i < 4; i++) {
+    let myAge = prompt(' how old do you think I am? , Hint:( between 18-40 ) ? ');
+    if (myAge > 30) {
+      alert(' too high, try again');
+    }
+    else if (myAge > 25) { alert('high a littel bit , try again') }
+  
+    else if (myAge < 20) {
+      alert('too low, try again');
+    }
+    else if (myAge < 25) { alert('lower a littel bit , try again') }
+  
+    else {
+      alert('Yes , I am 25 ');
+      console.log(' true');
+      score++;
+      break;
+    }
+    if (i == 3) { alert(' I am 25 years old , you were close!); }
+  }
+  
+  
+  let favCoun = ['thiland', 'usa', 'lebanon', 'turkey', 'jordan'];
+  for (let x = 0; x < 6; x++) {
+    let guessPlace = prompt('Can you guess my favorite country to visit?').toLowerCase();
+  
+    if (guessPlace === favCoun[0] || guessPlace === favCoun[1] || guessPlace === favCoun[2] || guessPlace == favCoun[3] || guessPlace == favCoun[4]) {
+      alert('good job! , thats correct');
+      alert('All favorite countries are [thiland, lebanon , turkey ,amman, jordan]');
+      console.log(' true');
+      score++;
+      break;
+    }
+  
+    else {
+      alert(' try again')
+  
+  
+    }
+  
+    if (x == 5) { alert('My favorate countries are [thiland, lebanon , turkey ,amman, jordan]') };
+  
+  }
+
+  
