@@ -122,4 +122,32 @@ for (let i = 0; i < 4; i++) {
   alert('it was good having you in my website '+userName+'. your score is '+score+'/7')
 
 
+  function userQuestion(question, correctAnsMsg, unCorrectAnsMsg, correctAns) {
+    let userInput;
+    do {
+      userInput = prompt(question);
+      if(userInput !== 'yes' && userInput !== 'y' && userInput !== 'no' && userInput !== 'n'){
+        alert('Pease type (yes) or (no) or (y) or (n)');
+      }
+    } while(userInput !== 'yes' && userInput !== 'y' && userInput !== 'no' && userInput !== 'n');
+  /////////////////////////////
+    if(userInput === correctAns ) {
+      console.log(correctAnsMsg);
+      alert(correctAnsMsg)
+      score++
+    } else {
+      console.log(unCorrectAnsMsg);
+      alert(unCorrectAnsMsg);
+    }
+  }
+  
+  userQuestion('Do you think I love nature?', 'true, who doee not!', 'well, actually I do','yes');
+  userQuestion('Do you think I enjoy cooking?', 'you get it right Good job', 'wrong answer, sadly I do not','no');
+  userQuestion('Do you think I like reading?', 'not true, you did not get this one', 'not true, you did not get this one', 'yes');
+  userQuestion('Do you think I have been to more than 3 countries?', 'true, good guessing!', 'sorry, you did not get it right' ,'yes');
+  userQuestion('Do you agree with me on preferriing cats over dogs?', 'great! welcome to the club', 'well we have to agree to disagree', 'yes');
+ 
+  
+
+
 
